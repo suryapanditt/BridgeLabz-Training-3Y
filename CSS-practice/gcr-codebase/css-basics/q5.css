@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #172033;
+}
+.pricing {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 4rem 0;
+}
+.pricing > h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.plans {
+    display: flex;
+    gap: 2rem;
+    align-items: stretch;
+}
+.plan {
+    position: relative;
+    flex: 1;
+    min-height: 430px;
+    padding: 2rem;
+    border: 2px solid #cbd5e1;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+.plan:hover {
+    transform: scale(1.04);
+    background-color: #eff6ff;
+}
+.plan h2 {
+    text-align: center;
+}
+.price {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.price span {
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+.plan li {
+    margin: 1rem 0;
+}
+.plan a {
+    margin-top: auto;
+    padding: 0.9rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 8px;
+}
+.popular {
+    border: 3px solid #f59e0b;
+    background-color: #fffbeb;
+}
+.badge {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    margin: 0;
+    padding: 0.4rem 0.8rem;
+    background-color: #f59e0b;
+    color: #111827;
+    border-radius: 20px;
+    font-weight: bold;
+}
+@media (max-width: 700px) {
+    .plans {
+        flex-direction: column;
+    }
+}

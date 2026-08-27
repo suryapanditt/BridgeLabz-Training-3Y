@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #172033;
+    background-color: #f8fafc;
+}
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    padding: 1rem 5%;
+    background-color: rgba(15, 23, 42, 0.95);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-header h1 {
+    margin: 0;
+}
+.site-header nav {
+    display: flex;
+    gap: 1.2rem;
+}
+.site-header a {
+    color: white;
+    text-decoration: none;
+}
+.hero {
+    position: relative;
+    min-height: 75vh;
+    background-image:
+        linear-gradient(
+            rgba(15, 23, 42, 0.6),
+            rgba(15, 23, 42, 0.6)
+        ),
+        url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content {
+    position: absolute;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    outline: 5px solid rgba(255, 255, 255, 0.15);
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.hero-content h2 {
+    font-size: 3rem;
+    margin: 0 0 1rem;
+}
+.about {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    padding: 6rem 8%;
+    margin: 2rem 0;
+    border-top: 5px solid #2563eb;
+   background:
+        linear-gradient(
+            135deg,
+            #dbeafe,
+            #eff6ff
+        );
+}
+.about > div {
+    flex: 1;
+}
+.about p {
+    line-height: 1.8;
+}
+.about-image img {
+    width: 100%;
+    display: block;
+    border-radius: 16px;
+    border: 6px solid white;
+}
+.services {
+    padding: 5rem 8%;
+    margin: 2rem 0;
+}
+.services h2,
+.contact h2 {
+    text-align: center;
+}
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.service {
+    padding: 2rem;
+    border: 2px solid #cbd5e1;
+    border-radius: 14px;
+    background-color: white;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.contact {
+    padding: 5rem 8%;
+    background-color: #e0f2fe;
+}
+.contact form {
+    max-width: 650px;
+    margin: 2rem auto 0;
+    padding: 2rem;
+    border: 2px solid #94a3b8;
+    background-color: white;
+    border-radius: 12px;
+}
+.contact label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+}
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid #94a3b8;
+    border-radius: 7px;
+    font: inherit;
+}
+.contact button {
+    margin-top: 1.2rem;
+    padding: 0.9rem 1.5rem;
+    border: 0;
+    border-radius: 7px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+.help-button {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    padding: 0.9rem 1.2rem;
+    border-radius: 50px;
+    background-color: #dc2626;
+    color: white;
+    text-decoration: none;
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.2);
+}
+footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: #0f172a;
+    color: white;
+}
+@media (max-width: 800px) {
+    .site-header {
+       flex-direction: column;
+        gap: 0.8rem;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+}
