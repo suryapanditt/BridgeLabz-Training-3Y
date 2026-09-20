@@ -1,0 +1,49 @@
+body {
+    font-family: Arial;
+    margin: 30px;
+}
+
+article {
+    max-width: 700px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.one {
+    font-family: Georgia;
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.two {
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
+
+mark {
+    background-color: yellow;
+}
+
+strong {
+    color: red;
+}
+
+em {
+    color: blue;
+}
+
+p::first-letter {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p::first-line {
+    font-weight: bold;
+}

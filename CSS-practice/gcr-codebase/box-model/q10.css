@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 25px;
+    border: 1px solid gray;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: gray;
+}
+
+nav .active {
+    background-color: blue;
+}
+
+main {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}

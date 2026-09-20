@@ -1,0 +1,44 @@
+
+input[type="text"] {
+    border: 2px solid blue;
+}
+
+a[href^="https"] {
+    color: green;
+}
+
+a:hover {
+    color: red;
+}
+
+input:focus {
+    background-color: lightyellow;
+}
+
+li:nth-child(2) {
+    color: blue;
+}
+
+div > p {
+    font-weight: bold;
+}
+
+div p {
+    background-color: lightgray;
+}
+
+.text + p {
+    color: purple;
+}
+
+.text ~ p {
+    text-decoration: underline;
+}
+
+h1::before {
+    content: "★ ";
+}
+
+h1::after {
+    content: " ★";
+}

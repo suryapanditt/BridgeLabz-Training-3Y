@@ -1,0 +1,45 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 2px 2px 4px gray;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card {
+    width: 200px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.shadow1 {
+    box-shadow: 5px 5px 10px gray;
+}
+
+.shadow2 {
+    box-shadow: 0 0 15px gray;
+}
+
+.shadow3 {
+    box-shadow: -5px 5px 10px gray;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px gray;
+}
+
+@media (max-width: 700px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+}
