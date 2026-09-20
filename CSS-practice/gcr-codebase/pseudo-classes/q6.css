@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation: move 2s ease-in-out infinite alternate;
+}
+
+.ball {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+    animation: bounce 1s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+h2 {
+    animation: colorChange 2s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(-30px);
+    }
+
+    to {
+        transform: translateX(30px);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes colorChange {
+    from {
+        color: blue;
+    }
+
+    to {
+        color: red;
+    }
+}

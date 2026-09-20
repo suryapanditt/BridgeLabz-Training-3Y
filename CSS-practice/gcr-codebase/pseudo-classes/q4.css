@@ -1,0 +1,38 @@
+p {
+    padding: 10px;
+}
+
+.special {
+    color: blue;
+}
+
+#unique {
+    color: red;
+}
+
+input[type="text"] {
+    border: 2px solid green;
+    padding: 10px;
+}
+
+div > p {
+    background-color: lightblue;
+}
+
+div p {
+    font-weight: bold;
+}
+
+.first + p {
+    color: purple;
+}
+
+.first ~ p {
+    text-decoration: underline;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+    background-color: lightgray;
+}
