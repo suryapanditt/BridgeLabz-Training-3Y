@@ -1,0 +1,42 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    width: 25%;
+    padding: 30px;
+    background-color: lightblue;
+    border: 1px solid gray;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background-color: lightgreen;
+}
+
+@media (max-width: 900px) {
+    .card {
+        width: 50%;
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    .card {
+        width: auto;
+    }
+}

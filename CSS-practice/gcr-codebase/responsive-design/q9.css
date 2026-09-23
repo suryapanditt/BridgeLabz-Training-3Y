@@ -1,0 +1,33 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 30px;
+}
+
+section {
+    padding: 30px;
+    border: 1px solid gray;
+    transition: 0.3s;
+}
+
+section:hover {
+    background: linear-gradient(to right, lightblue, lightgreen);
+    color: white;
+}
+
+code {
+    display: block;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
