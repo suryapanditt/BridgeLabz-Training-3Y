@@ -1,0 +1,7 @@
+.plan-card {
+    transition: 0.3s;
+}
+
+.plan-card:hover {
+    transform: translateY(-8px);
+}
