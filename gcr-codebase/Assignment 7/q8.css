@@ -1,0 +1,31 @@
+body {
+    font-family: Arial;
+    margin: 30px;
+}
+
+#dropdown {
+    width: 200px;
+    position: relative;
+}
+
+#dropBtn {
+    width: 200px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#options {
+    display: none;
+    border: 1px solid gray;
+    background: white;
+}
+
+#options p {
+    padding: 8px;
+    margin: 0;
+    cursor: pointer;
+}
+
+#options p:hover {
+    background: #dddddd;
+}

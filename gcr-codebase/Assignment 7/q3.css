@@ -1,0 +1,19 @@
+body {
+    font-family: Arial;
+    margin: 30px;
+}
+
+input {
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 8px 15px;
+    margin-right: 5px;
+}
+
+#error {
+    color: red;
+}
